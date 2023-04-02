@@ -3,24 +3,15 @@
   padding: 0;
 }
 
-:root {
-  --background-white: #FFFFFF;
-  --background-gray: #F2F2F2;
-  --background-purple: #5E3DB3;
-  --background-darkpurple: #090C35;
-}
-
 .App {
-  white-space: normal;
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
-  background-color: var(--background-white);
+  background-color: #FFFFFF;
   min-width: 218px;
 }
 
 .section {
   position: relative;
-  overflow: hidden;
 }
 
 .left {
@@ -34,21 +25,25 @@
 }
 
 .bg-white {
-  background-color: var(--background-white);
+  background-color: #FFFFFF;
 }
 
 .bg-gray {
-  background-color: var(--background-gray);
+  background-color: #F2F2F2;
 }
 
 .bg-purple {
-  background-color: var(--background-purple);
-  color:white
+  background-color: #5E3DB3;
+  color: #FFFFFF;
 }
 
 .bg-darkpurple {
-  background-color: var(--background-darkpurple);
-  color:white
+  background-color: #090C35;
+  color: #FFFFFF;
+}
+
+.item {
+  padding: 30px 0;
 }
 
 .item-title-number {
@@ -74,7 +69,7 @@
   display: flex;
 	margin-bottom: 15px;
   font-size: 1.3rem;
-	color: #c2c2c2;
+	color: #C2C2C2;
 	text-transform: uppercase;
 }
 
@@ -84,10 +79,6 @@
 
 .bg-darkpurple .item-title-number {
   color: #8F6BE8;
-}
-
-.item {
-  padding: 30px 0;
 }
 
 .image {
@@ -137,7 +128,7 @@
 
 /* tablet */
 @media only screen and (max-width: 768px) {
-  .section {
+  .title {
     padding-top: 40px;
   }
 
