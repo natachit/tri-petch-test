@@ -20,8 +20,6 @@ export default function Section({ section }) {
 						<ItemTitle
 							number={index + 1}
 							text={item.title}
-							numberColor={item.numberColor}
-							underlineColor={item.underlineColor}
 						></ItemTitle>
 						<p>{item.description}</p>
 					</div>
