@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --background-white: #FFFFFF;
+  --background-gray: #F2F2F2;
+  --background-purple: #5E3DB3;
+  --background-darkpurple: #090C35;
+}
+
+.App {
+  white-space: normal;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  background-color: var(--background-white);
+  min-width: 218px;
+}
+
+.section {
+  position: relative;
+  overflow: hidden;
+}
+
+.left {
+  margin-left: 10%;
+  width: 40%;
+}
+
+.right {
+  margin-left: 50%;
+  width: 40%;
+}
+
+.bg-white {
+  background-color: var(--background-white);
+}
+
+.bg-gray {
+  background-color: var(--background-gray);
+}
+
+.bg-purple {
+  background-color: var(--background-purple);
+  color:white
+}
+
+.bg-darkpurple {
+  background-color: var(--background-darkpurple);
+  color:white
+}
+
+.item {
+  padding: 30px 0;
+}
+
+.image {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.image-right {
+  left: 50%;
+}
+
+.image-left {
+  right: 50%;
+}
+
+.title {
+  color: #E7E7E7;
+  font-size: 2.8rem !important;
+  text-transform: uppercase;
+  padding-top: 20px;
+}
+
+.rec-carousel {
+  margin-top: 30px;
+}
+
+.rec-pagination {
+  margin: 20px 0;
+}
+
+.rec-slider-container {
+  margin: 0 15px !important;
+}
+
+.rec-dot {
+  box-shadow: none !important;
+  background-color: #D8D8D8 !important;
+}
+
+.rec-dot_active {
+  background-color: #5C3CAF !important;
+}
+
+/* tablet */
+@media only screen and (max-width: 768px) {
+  .section {
+    padding-top: 40px;
+  }
+
+  .left {
+    margin-left: 5%;
+    width: 55%;
+  }
+
+  .right {
+    margin-left: 40%;
+    width: 55%;
+  }
+
+  .image {
+    width: 40%;
+  }
+
+  .image-right {
+    background-position: right;
+    right: 0;
+    left: auto;
+  }
+
+  .image-left {
+    background-position: left;
+    left: 0;
+    right: auto;
+  }
+
+  .item {
+    padding: 20px 0;
+  }
+}
+
+/* mobile */
+@media only screen and (max-width: 320px) {
+  .title {
+    padding: 15px;
+  }
+
+  img {
+    width: 100%;
+  }
+}
